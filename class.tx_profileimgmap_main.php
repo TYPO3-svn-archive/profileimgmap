@@ -78,20 +78,20 @@ class tx_profileimgmap_main {
 
 
 		for ($i = (count($rows)-1); $i < $maxNumber; $i++) {
-			$rows[$i]['image'] = 'false';
+			$rows[$i]['image'] = false;
 		}
 
 		shuffle($rows);
 
 		$colNumber = 0;
 		for ($i = 0; $i < $maxNumber; $i++) {
-			if ($rows[$i]['image'] == 'false') continue;
+			if ($rows[$i]['image'] === false) continue;
 
 			$colNumber = floor($i / $imagesPerColumn);
 			$x = ($colNumber * ($imageWidth+$spacing)) + $spacing;
 			$y = (($i - (floor($i / $imagesPerColumn) * $imagesPerColumn)) * ($imageHeight + $spacing)) + $spacing;
 			$imgConf['file.'][$i+1] = 'IMAGE';
-			$imgConf['file.'][($i+1).'.'] = self::addImage('uploads/tx_srfeuserregister/'.$rows[$i]['image'], $imageWidth, $imageHeight, $x, $y);
+			$imgConf['file.'][($i+1).'.'] = self::addImage($imagePath . $rows[$i]['image'], $imageWidth, $imageHeight, $x, $y);
 		}
 
 		$cObj = t3lib_div::makeInstance('tslib_cObj');
