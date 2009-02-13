@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext: "profileimgmap"
 #
-# Auto generated 13-02-2009 10:07
+# Auto generated 13-02-2009 10:11
 #
 # Manual updates:
 # Only the data in the array - anything else is removed by next write.
@@ -29,7 +29,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'author_company' => '',
-	'version' => '0.0.0',
+	'version' => '0.1.0',
 	'constraints' => array(
 		'depends' => array(
 		),
