@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext: "profileimgmap"
 #
-# Auto generated 13-02-2009 10:03
+# Auto generated 13-02-2009 10:07
 #
 # Manual updates:
 # Only the data in the array - anything else is removed by next write.
