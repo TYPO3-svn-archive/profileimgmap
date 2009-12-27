@@ -1,3 +1,11 @@
+2009-12-28  Peter Schuster   <typo3@peschuster.de>
+
+	* released version 0.1.1
+
+2009-02-13  Peter Schuster   <typo3@peschuster.de>
+
+	* fix: conf value imagePath was read from configuration array but not used
+
 2009-02-13  Peter Schuster   <typo3@peschuster.de>
 
 	* Initial release of the extension
